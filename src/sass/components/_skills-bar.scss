@@ -38,6 +38,8 @@
   top: -15px;
   right: 0;
   transform: translateX(50%);
+
+  box-shadow: 0 0 15px $call_to_action;
 }
 
 @keyframes fillBars {

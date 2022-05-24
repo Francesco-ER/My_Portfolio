@@ -1,6 +1,5 @@
 .experience{
   margin-top: 32px;
-  height: 3000px;
   padding: 16px;
   &-title{
     font-family: $font_title;
@@ -35,19 +34,15 @@
   }
   &-tuvalca_mockup_content{  
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    height: 1004px;
     gap: 8px;
     &_1,&_3,&_5{
       width: 110px;
     }
-    &_2,&_4{
+    &_2,&_4,&_6{
       width: 210px;
-      height: 118px;
-    }
-    &_6{
-      width: 210px;
-      height: 460px;
     }
   }
 }
