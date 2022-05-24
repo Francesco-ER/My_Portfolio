@@ -33,9 +33,13 @@
     }
   }
   &-tuvalca_mockup_content{  
+    margin-top: 16px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    //justify-content: center;
+    align-items: center;
+    align-content: center;
     height: 1004px;
     gap: 8px;
     &_1,&_3,&_5{
