@@ -1,0 +1,53 @@
+.experience{
+  margin-top: 32px;
+  height: 3000px;
+  padding: 16px;
+  &-title{
+    font-family: $font_title;
+    font-size: 40px;
+    color: $call_to_action;
+    margin: 0;
+    text-align: center;
+    background-color: $white;
+    width: 286px;
+    padding: 16px;
+    border-radius: 10px;
+  }
+  &-devfy,&-broker,&-tuvalca{
+    margin-top: 20px;
+    .logo-devfy{
+      width: 110px;
+      height: auto;
+    }
+    &_bio{
+      margin: 8px;
+      color: $white;
+      font-size: 20px;
+      .bold{
+        font-weight: bold;
+      }
+    }
+    &_mockup{
+     width: 320px;
+     display: block;
+     margin: 0 auto; 
+    }
+  }
+  &-tuvalca_mockup_content{  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    &_1,&_3,&_5{
+      width: 110px;
+    }
+    &_2,&_4{
+      width: 210px;
+      height: 118px;
+    }
+    &_6{
+      width: 210px;
+      height: 460px;
+    }
+  }
+}
