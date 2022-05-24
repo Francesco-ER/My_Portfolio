@@ -1,0 +1,19 @@
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Ubuntu+Mono:wght@400;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+$font_title : 'Ubuntu', sans-serif;
+$font_p : 'Ubuntu Mono', monospace;
+$font_name : 'Righteous', cursive;
+//Colors palette
+$dark_blue : #011149;
+$dark_blue2 : #012b7e;
+$light_blue : #0194fe;
+$call_to_action : #5dd39e;
+$white : #fff;
+$black : #000;
+//Styles
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
