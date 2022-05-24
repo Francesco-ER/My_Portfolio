@@ -1,0 +1,82 @@
+.header-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  .bg_header {
+    width: 100vw;
+    height: 100vh;
+    opacity: .2;
+    object-fit: cover;
+    object-position: left;
+    z-index: -1;
+  }
+
+  .card-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    height: 290px;
+    width: 300px;
+    background-color: $dark_blue;
+    border-radius: 10px;
+    .yo-img {
+      width: 260px;
+      height: 260px;
+      object-fit: cover;
+      object-position: left;
+      position: absolute;
+      top: -170px;
+      border: 12px solid $call_to_action;
+      border-radius: 100%;
+    }
+
+    .name-title,
+    .bio {
+      margin: 0;
+      color: $white;
+      text-align: center;
+    }
+
+    .name-title {
+      font-family: $font_title;
+      font-size: 28px;
+      margin-top: 120px;
+    }
+
+    .bio {
+      font-family: $font_p;
+      font-weight: normal;
+      margin-top: 8px;
+      font-size: 24px;
+    }
+  }
+
+  .menu-social {
+    margin: 16px 0 0 0;
+    gap: 12px;
+
+    &_item {
+      height: 54px;
+      width: 54px;
+
+      &_link {
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+@keyframes circle {
+  0%{
+    border: 12px solid rgba(93, 211, 158,1);
+  }
+  50%{
+    border: 45px solid rgba(93, 211, 158,0);
+  }
+  100%{
+    border: 12px solid rgba(93, 211, 158,1);
+  }
+}
