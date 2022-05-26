@@ -40,6 +40,7 @@
 
   &-more {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: space-evenly;
     gap: 8px;
@@ -78,6 +79,7 @@
     font-size: 32px;
     font-weight: bold;
     padding: 16px;
+    height: 70px;
     border: 1px solid $white;
     border-radius: 8px;
     color: $white;
@@ -87,5 +89,16 @@
     &:hover{
       background-color: $call_to_action;
     }
+  }
+}
+
+@media (min-width: 720px) {
+  .about{
+    padding: 16px 32px 16px 32px;
+  }
+}
+@media (min-width: 910px) {
+  .about{
+    padding: 16px 64px 16px 64px;
   }
 }

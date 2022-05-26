@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const basePath = __dirname;
 const distPath = 'dist';
 
@@ -22,23 +23,23 @@ module.exports = {
   module: {
     rules: [
       {
-        test:/\.js/,
+        test: /\.js/,
         exclude: /node_modules/,
         use: ["babel-loader"],
       },
       {
-        test:/\.scss$/i,
+        test: /\.scss$/i,
         use: [
           "style-loader",
           "css-loader",
           {
-          loader:"sass-loader" 
+            loader: "sass-loader"
           }
         ],
       },
       {
-        test:/\.(jpg|jpeg|png|gif|svg)$/,
-        loader: 'file-loader', 
+        test: /\.(jpg|jpeg|png|gif|svg)$/,
+        loader: 'file-loader',
         options: {
           outputPath: 'img',
           name: '[name].[ext]'
@@ -46,10 +47,17 @@ module.exports = {
       },
     ],
   },
-  plugins:[new HtmlWebpackPlugin({
-    template: './src/index.html',
-    filename: 'index.html'
-  })],
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+      filename: 'index.html'
+    }),
+    new CopyPlugin({
+      patterns: [
+        { from: './src/envia.php', to: './' },
+      ],
+    }),
+  ],
   //output
   output: {
     path: path.join(basePath, distPath),

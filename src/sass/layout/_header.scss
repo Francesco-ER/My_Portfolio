@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+
   .bg_header {
     width: 100vw;
     height: 100vh;
@@ -22,6 +23,7 @@
     width: 300px;
     background-color: $dark_blue;
     border-radius: 10px;
+
     .yo-img {
       width: 260px;
       height: 260px;
@@ -69,14 +71,35 @@
   }
 }
 
+@media (min-width: 720px) {
+  .header-content {
+    .card-profile {
+      height: 400px;
+      width: 400px;
+
+      .yo-img {
+        height: 330px;
+        width: 330px;
+      }
+
+      .name-title {
+        margin-top: 210px;
+        font-size: 36px;
+      }
+    }
+  }
+}
+
 @keyframes circle {
-  0%{
-    border: 12px solid rgba(93, 211, 158,1);
+  0% {
+    border: 12px solid rgba(93, 211, 158, 1);
   }
-  50%{
-    border: 45px solid rgba(93, 211, 158,0);
+
+  50% {
+    border: 45px solid rgba(93, 211, 158, 0);
   }
-  100%{
-    border: 12px solid rgba(93, 211, 158,1);
+
+  100% {
+    border: 12px solid rgba(93, 211, 158, 1);
   }
 }

@@ -50,3 +50,37 @@
     }
   }
 }
+
+@media (min-width: 720px) {
+  .experience{
+    padding: 16px 32px 16px 32px;
+    &-tuvalca{
+      &_mockup_content{
+        height: 510px;
+        &_1{
+          order: 1;
+        }
+        &_2{
+          order: 3;
+        }
+        &_3{
+          order: 2;
+        }
+        &_4{
+          order: 4;
+        }
+        &_5{
+          order: 5;
+        }
+        &_6{
+          order: 6;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 910px) {
+  .experience{
+    padding: 16px 64px 16px 64px;
+  }
+}

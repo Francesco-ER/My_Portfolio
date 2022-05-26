@@ -9,6 +9,7 @@
 }
 
 .skill-bar {
+  width: 98%;
   height: 14px;
   background: $black;
   border-radius: 3px;
@@ -40,6 +41,12 @@
   transform: translateX(50%);
 
   box-shadow: 0 0 15px $call_to_action;
+}
+
+@media (min-width: 720px) {
+  .skills{
+    width: 80%;
+  }
 }
 
 @keyframes fillBars {
