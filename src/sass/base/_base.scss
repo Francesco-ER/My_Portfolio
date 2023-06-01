@@ -17,3 +17,12 @@ ul{
 a{
   text-decoration: none;
 }
+html{
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 820px) {
+  section[id]{
+    scroll-margin-top: 80px;
+  }
+}

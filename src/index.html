@@ -10,7 +10,7 @@
 
 <body>
   <div class="boton-menu">
-    <h1 class="name">Francesco</h1>
+    <h1 class="name"><a href="#Francesco">Francesco</a></h1>
     <button class="toggle">
       <span class="barr"></span>
       <span class="barr"></span>
@@ -19,10 +19,10 @@
   </div>
   <nav class="menu" id="menuid">
     <ul class="menu-item">
-      <li class="menu-item_item"><a class="menu-item_item_link" href="#">#Conoceme</a></li>
-      <li class="menu-item_item"><a class="menu-item_item_link" href="#">#Skills</a></li>
-      <li class="menu-item_item"><a class="menu-item_item_link" href="#">#Experiencias</a></li>
-      <li class="menu-item_item"><a class="menu-item_item_link" href="#">#Contactame</a></li>
+      <li class="menu-item_item"><a class="menu-item_item_link" href="#Francesco">Francesco</a></li>
+      <li class="menu-item_item"><a class="menu-item_item_link" href="#Conoceme">#Conoceme</a></li>
+      <li class="menu-item_item"><a class="menu-item_item_link" href="#Experiencias">#Experiencias</a></li>
+      <li class="menu-item_item"><a class="menu-item_item_link" href="#Contactame">#Contactame</a></li>
     </ul>
     <ul class="menu-social">
       <li class="menu-social_item">
@@ -42,7 +42,7 @@
       </li>
     </ul>
   </nav>
-  <header class="header-content">
+  <header class="header-content" id="Francesco">
     <img src="./img/bg_header.jpg" alt="Wireframe" class="bg_header">
     <div class="card-profile">
       <img src="./img/yo.jpg" alt="Francesco Rodriguez" class="yo-img">
@@ -67,7 +67,7 @@
       </ul>
     </div>
   </header>
-  <section class="about">
+  <section class="about" id="Conoceme">
     <h2 class="about-title">#Conoceme</h2>
     <p class="about-p">
       <span class="color">¡Hola! Soy Francesco. </span>Tengo poco más de un año trabajando con diseño UI (interfaz de
@@ -93,7 +93,9 @@
         </li>
         <li class="about-more_description_1_item">Autodidacta</li>
       </ul>
-      <button name="download-cv" class="button-cv">Descargar CV <i class="fa-solid fa-download"></i></button>
+      <button name="download-cv" class="button-cv">
+        <a href="CurriculumFrancescoRodriguez.pdf" download="CV Francesco Rodriguez" target="_blank" title="Descargar CV"> Descargar CV <i class="fa-solid fa-download"></i></a>
+      </button>
     </div>
     <div class="skills">
       <div class="skill">
@@ -148,49 +150,58 @@
       </div>
     </div>
   </section>
-  <section class="experience">
+  <section class="experience" id="Experiencias">
     <h2 class="experience-title">#Experiencias</h2>
-    <div class="experience-devfy">
-      <img src="./img/logo_devfy.png" alt="Logo Devfy" class="logo-devfy">
-      <p class="experience-devfy_bio"><span class="bold">Diseñador UXUI, página web de presentación y logo.</span>
-        Propio: DevFY.
-        Diseño de página de presentación y blog (aún no ha sido desarrollada solo diseño). <span class="bold">Tiempo:
-          Enero 2021 - Marzo 2021.</span></p>
-      <img src="./img/Mockup_Devfy.png" alt="Mockup Devfy" class="experience-devfy_mockup">
-    </div>
-    <div class="experience-broker">
-      <img src="./img/logo_brok.png" alt="Logo brokeropiniones" class="logo-broker">
-      <p class="experience-broker_bio"><span class="bold">Diseñador de UXUI para página web y logo.</span>
-        Empresa: BrokerOpiniones.
-        Rediseñando tanto el logo de esta marca como su página web. <span class="bold">Tiempo: Junio 2021 - Enero
-          2022</span></p>
-      <img src="./img/Mockup_Broker.png" alt="Mockup brokeropiniones" class="experience-broker_mockup">
-    </div>
-    <div class="experience-tuvalca">
-      <img src="./img/Logo_tuvalca 1.png" alt="Logo tuvalca" class="logo-tuvalca">
-      <p class="experience-tuvalca_bio"><span class="bold">Diseñador UXUI de página web, programador Front-end de nivel
-          básico y Diseños para RRSS (Redes Sociales).</span>
-        Empresa: Tuvalca.
-        Diseño de aplicación web (a gusto del cliente), desde su página de presentación hasta un catálogo para sus
-        productos, y desarrollo front-end básico en su página de presentación (el diseño está listo, pero aun continua
-        en desarrollo).
-        <span class="bold">Tiempo: Febrero 2022 - Mayo 2022. </span>
-      </p>
-      <div class="experience-tuvalca_mockup_content">
-        <img src="./img/Mobile_360px 1.png" alt="Mockup tuvalca" class="experience-tuvalca_mockup_content_1">
-        <img src="./img/Mobile_360px 2.png" alt="Mockup tuvalca" class="experience-tuvalca_mockup_content_3">
-        <img src="./img/Mobile_360px 3.png" alt="Mockup tuvalca" class="experience-tuvalca_mockup_content_5">
-        <img src="./img/Desktop_1280px 2.png" alt="Mockup tuvalca" class="experience-tuvalca_mockup_content_4">
-        <img src="./img/Desktop_1280px 1.png" alt="Mockup tuvalca" class="experience-tuvalca_mockup_content_2">
-        <img src="./img/Desktop_1280px 3.png" alt="Mockup tuvalca" class="experience-tuvalca_mockup_content_6">
+    <div class="experience-content">
+      <div class="experience-devfy">
+        <img src="./img/logo_devfy.png" alt="Logo Devfy" class="logo-devfy">
+        <p class="experience-devfy_bio"><span class="bold">Diseñador UXUI, página web de presentación y logo.</span>
+          Propio: DevFY.
+          Diseño de página de presentación y blog (aún no ha sido desarrollada solo diseño). <span class="bold">Tiempo:
+            Enero 2021 - Marzo 2021.</span></p>
+        <a target="_blank" href="https://www.figma.com/file/1q8gNXEWLte8FWv2eJEBTj/DevFY_web">
+          <img src="./img/Mockup_Devfy.png" alt="Mockup Devfy" class="experience-devfy_mockup">
+        </a>
+      </div>
+      <div class="experience-broker">
+        <img src="./img/logo_brok.png" alt="Logo brokeropiniones" class="logo-broker">
+        <p class="experience-broker_bio"><span class="bold">Diseñador de UXUI para página web y logo.</span>
+          Empresa: BrokerOpiniones.
+          Rediseñando tanto el logo de esta marca como su página web. <span class="bold">Tiempo: Junio 2021 - Enero
+            2022</span></p>
+        <a href="https://www.figma.com/file/dYEuNL4fPOeFcYvjJCwejF/www.brokeropiniones.com" target="_blank">
+          <img src="./img/Mockup_Broker.png" alt="Mockup brokeropiniones" class="experience-broker_mockup">
+        </a>
+      </div>
+      <div class="experience-tuvalca">
+        <img src="./img/Logo_tuvalca 1.png" alt="Logo tuvalca" class="logo-tuvalca">
+        <p class="experience-tuvalca_bio"><span class="bold">Diseñador UXUI de página web, programador Front-end de
+            nivel
+            básico y Diseños para RRSS (Redes Sociales).</span>
+          Empresa: Tuvalca.
+          Diseño de aplicación web (a gusto del cliente), desde su página de presentación hasta un catálogo para sus
+          productos, y desarrollo front-end básico en su página de presentación (el diseño está listo, pero aun continua
+          en desarrollo).
+          <span class="bold">Tiempo: Febrero 2022 - Mayo 2022. </span>
+        </p>
+        <a href="https://www.figma.com/file/zgCc1ZcChJVJoxo7TFA2xQ/Tuvalca_Web_Desing?node-id=92%3A276">
+          <div class="experience-tuvalca_mockup_content">
+            <img src="./img/Mobile_360px 1.png" alt="Mockup tuvalca" class="experience-tuvalca_mockup_content_1">
+            <img src="./img/Mobile_360px 2.png" alt="Mockup tuvalca" class="experience-tuvalca_mockup_content_3">
+            <img src="./img/Mobile_360px 3.png" alt="Mockup tuvalca" class="experience-tuvalca_mockup_content_5">
+            <img src="./img/Desktop_1280px 2.png" alt="Mockup tuvalca" class="experience-tuvalca_mockup_content_4">
+            <img src="./img/Desktop_1280px 1.png" alt="Mockup tuvalca" class="experience-tuvalca_mockup_content_2">
+            <img src="./img/Desktop_1280px 3.png" alt="Mockup tuvalca" class="experience-tuvalca_mockup_content_6">
+          </div>
+        </a>
       </div>
     </div>
   </section>
-  <section class="contac">
+  <section class="contac" id="Contactame">
     <img src="./img/bg_contac.jpg" alt="Francesco Rodriguez" class="bg_contac">
     <h2 class="contac-title">#Contactame</h2>
     <div class="contac-content">
-      <form class="contac-form" action="./envia.php" method="post">
+      <form class="contac-form" data-netlify="true" name="Formulario de Portafolio" method="POST">
         <div class="contac-form_group">
           <input type="text" id="name" class="contac-form_group_input" name="nombre" placeholder=" ">
           <label for="name" class="contac-form_group_label">Nombre y Apellido</label>

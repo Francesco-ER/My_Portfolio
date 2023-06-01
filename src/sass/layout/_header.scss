@@ -89,7 +89,43 @@
     }
   }
 }
+@media (min-width: 1000px) {
+  .header-content {
+    .card-profile {
+      margin-top: 120px;
+      height: 300px;
 
+      .yo-img {
+        top: -140px;
+        height: 230px;
+        width: 230px;
+      }
+
+      .name-title {
+        margin-top: 126px;
+        font-size: 36px;
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .header-content {
+    .card-profile {
+      height: 400px;
+      width: 400px;
+
+      .yo-img {
+        height: 330px;
+        width: 330px;
+      }
+
+      .name-title {
+        margin-top: 210px;
+        font-size: 36px;
+      }
+    }
+  }
+}
 @keyframes circle {
   0% {
     border: 12px solid rgba(93, 211, 158, 1);

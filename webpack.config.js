@@ -54,7 +54,7 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [
-        { from: './src/envia.php', to: './' },
+        {from: "./src/CurriculumFrancescoRodriguez.pdf", to: './'}
       ],
     }),
   ],

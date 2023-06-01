@@ -45,10 +45,29 @@
 
 @media (min-width: 720px) {
   .skills{
-    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 16px;
+    justify-content: space-evenly;
+  }
+  .skill-name{
+    width: 340px;
   }
 }
-
+@media (min-width: 1200px) {
+  .skills{
+    justify-content: flex-start;
+  }
+  .skill-name{
+    width: 330px;
+  }
+}
+@media (min-width: 1600px) {
+  .skill-name{
+    width: 450px;
+  }
+}
 @keyframes fillBars {
   from {
     width: 0;

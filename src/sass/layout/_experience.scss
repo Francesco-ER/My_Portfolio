@@ -1,7 +1,8 @@
-.experience{
+.experience {
   margin-top: 32px;
   padding: 16px;
-  &-title{
+
+  &-title {
     font-family: $font_title;
     font-size: 40px;
     color: $call_to_action;
@@ -9,30 +10,39 @@
     text-align: center;
     background-color: $white;
     width: 286px;
+    height: 46px;
     padding: 16px;
     border-radius: 10px;
   }
-  &-devfy,&-broker,&-tuvalca{
+
+  &-devfy,
+  &-broker,
+  &-tuvalca {
     margin-top: 20px;
-    .logo-devfy{
+
+    .logo-devfy {
       width: 110px;
       height: auto;
     }
-    &_bio{
+
+    &_bio {
       margin: 8px;
       color: $white;
       font-size: 20px;
-      .bold{
+
+      .bold {
         font-weight: bold;
       }
     }
-    &_mockup{
-     width: 320px;
-     display: block;
-     margin: 0 auto; 
+
+    &_mockup {
+      width: 320px;
+      display: block;
+      margin: 0 auto;
     }
   }
-  &-tuvalca_mockup_content{  
+
+  &-tuvalca_mockup_content {
     margin-top: 16px;
     display: flex;
     flex-direction: column;
@@ -42,45 +52,113 @@
     align-content: center;
     height: 1004px;
     gap: 8px;
-    &_1,&_3,&_5{
+
+    &_1,
+    &_3,
+    &_5 {
       width: 110px;
     }
-    &_2,&_4,&_6{
+
+    &_2,
+    &_4,
+    &_6 {
       width: 210px;
     }
   }
 }
 
 @media (min-width: 720px) {
-  .experience{
+  .experience {
     padding: 16px 32px 16px 32px;
-    &-tuvalca{
-      &_mockup_content{
+
+    &-tuvalca {
+      &_mockup_content {
         height: 510px;
-        &_1{
+
+        &_1 {
           order: 1;
         }
-        &_2{
+
+        &_2 {
           order: 3;
         }
-        &_3{
+
+        &_3 {
           order: 2;
         }
-        &_4{
+
+        &_4 {
           order: 4;
         }
-        &_5{
+
+        &_5 {
           order: 5;
         }
-        &_6{
+
+        &_6 {
           order: 6;
         }
       }
     }
   }
 }
+
 @media (min-width: 910px) {
-  .experience{
+  .experience {
     padding: 16px 64px 16px 64px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .experience {
+    .experience-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .experience-devfy,
+      .experience-broker {
+        width: 430px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .experience {
+    padding: 16px 128px 16px 128px;
+
+    .experience-content {
+      justify-content: space-between;
+
+      .experience-devfy,
+      .experience-broker {
+        width: 470px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .experience {
+    .experience-content {
+
+      .experience-devfy,
+      .experience-broker {
+        width: 540px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  .experience {
+    .experience-content {
+
+      .experience-devfy,
+      .experience-broker {
+        width: 600px;
+      }
+    }
   }
 }

@@ -82,7 +82,9 @@
     height: 70px;
     border: 1px solid $white;
     border-radius: 8px;
-    color: $white;
+    &>a{
+      color: $white;
+    }
 
     transition: all .5s;
 
@@ -101,4 +103,9 @@
   .about{
     padding: 16px 64px 16px 64px;
   }
+}
+@media (min-width: 1200px) {
+ .about{
+   padding: 16px 128px 16px 128px;
+ } 
 }
